@@ -2,30 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/png">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/png"
+    />
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>skilled-elearning-landing-page</title>
   </head>
   <body>
-    <header>
-      <img src="./assets/images/logo-light.svg" alt="logo light">
+    <header class="header">
+      <img class="logo" src="./assets/images/logo-light.svg" alt="logo light" />
       <a class="button button--dark" href="#">Get Started</a>
-    </header>
-    <main>
-      <section class="top__main">
-        <h1 class="tittle">Maximize skill,
-          minimize budget</h1>
-        <p class="text">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+      <section class="header__text">
+        <h1 class="tittle">Maximize skill, minimize budget</h1>
+        <p class="text">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
         <a class="button button--pink" href="#">Get Started</a>
         <picture>
-          <source media="(800px)" srcset="./assets/images/image-hero-desktop.png">
-          <source media="(768px)" srcset="./assets/images/image-hero-tablet.png">
-          <source media="(360px)" srcset="./assets/images/image-hero-mobile.png">
-          <img src="./assets/images/image-hero-mobile.png" alt="image">
+          <source
+            media="(min-width 1024px)"
+            srcset="./assets/images/image-hero-desktop.png"
+          />
+          <source
+            media="(min-width 768px)"
+            srcset="./assets/images/image-hero-tablet.png"
+          />
+          <source
+            media="(min-width 360px)"
+            srcset="./assets/images/image-hero-mobile.png"
+          />
+          <img
+            class="header__img"
+            src="./assets/images/image-hero-mobile.png"
+            alt="image"
+          />
         </picture>
       </section>
+    </header>
+    <main class="main">
+      <section class="grid-container">
+        <div class="card">
+          <p class="text-bold">Check out our most popular courses!</p>
+        </div>
+        <div class="card card--logo">
+          <img src="./assets/images/icon-animation.svg" alt="logo" />
+          <h2 class="subtitle">Animation</h2>
+          <p class="text">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a class="button button--ghost" href="#">Get Started</a>
+        </div>
+        <div class="card card--logo">
+          <img src="./assets/images/icon-design.svg" alt="logo" />
+          <h2 class="subtitle">Design</h2>
+          <p class="text">
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <a class="button button--ghost" href="#">Get Started</a>
+        </div>
+        <div class="card card--logo">
+          <img src="./assets/images/icon-photography.svg" alt="logo" />
+          <h2 class="subtitle">Photography</h2>
+          <p class="text">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a class="button button--ghost" href="#">Get Started</a>
+        </div>
+        <div class="card card--logo">
+          <img src="./assets/images/icon-crypto.svg" alt="logo" />
+          <h2 class="subtitle">Crypto</h2>
+          <p class="text">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a class="button button--ghost" href="#">Get Started</a>
+        </div>
+        <div class="card card--logo">
+          <img src="./assets/images/icon-business.svg" alt="logo" />
+          <h2 class="subtitle">Business</h2>
+          <p class="text">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <a class="button button--ghost" href="#">Get Started</a>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <img class="logo" src="./assets/images/logo-dark.svg" alt="logo dark" />
+      <a class="button button--purple" href="#">Get Started</a>
+    </footer>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
