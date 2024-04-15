@@ -1,1 +1,15 @@
-
+@use '../mixins/responsive.scss' as *;
+.text{
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+    color: var(--color-grey);
+    @include responsive(tablet){
+        font-size: 1.125rem;
+        line-height: 28px;
+    }
+    @include responsive(desktop){
+        font-size: 1.125rem;
+        line-height: 28px;
+    }
+}

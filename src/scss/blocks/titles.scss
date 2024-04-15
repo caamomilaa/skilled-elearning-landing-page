@@ -1,1 +1,10 @@
-
+@use '../mixins/responsive.scss' as *;
+.tittle{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--color-darkblue);
+    margin: 0;
+    @include responsive(desktop){
+        font-size: 3.5rem;
+    }
+}

@@ -1,4 +1,12 @@
 :root {
+    --color-blue: #666CA3;
+    --color-darkblue: #13183F;
+    --color-grey: #83869A;
+    --color-pink: #F74780;
+    --color-lightpink: hsl(341, 100%, 83%);
+    --color-white: #FFFFFF;
+    --gradient-pink: background-image: linear-gradient(#FF6F48,#F02AA6);
+    --gradient-purple: background-image: linear-gradient(#4851FF,#F02AA6);
 }
 
-/* Variables SASS */
+/* Puedo poner las variables de texto en xl,s...?*/
