@@ -2,23 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/png">
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>skilled-elearning-landing-page</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="card__title">Título</h1>
-      <p class="card__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis
-        mollitia sequi, quae voluptatem, eligendi, nam repudiandae cupiditate ad
-        consequatur natus omnis ducimus pariatur excepturi in magni voluptas
-        repellat quasi?
-      </p>
-      <a class="card__button" href="">boton</a>
-    </div>
+    <header>
+      <img src="./assets/images/logo-light.svg" alt="logo light">
+      <a class="button button--dark" href="#">Get Started</a>
+    </header>
+    <main>
+      <section class="top__main">
+        <h1 class="tittle">Maximize skill,
+          minimize budget</h1>
+        <p class="text">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+        <a class="button button--pink" href="#">Get Started</a>
+        <picture>
+          <source media="(800px)" srcset="./assets/images/image-hero-desktop.png">
+          <source media="(768px)" srcset="./assets/images/image-hero-tablet.png">
+          <source media="(360px)" srcset="./assets/images/image-hero-mobile.png">
+          <img src="./assets/images/image-hero-mobile.png" alt="image">
+        </picture>
+      </section>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
