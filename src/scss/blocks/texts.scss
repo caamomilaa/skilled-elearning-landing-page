@@ -3,6 +3,7 @@
     font-weight: 500;
     font-size: 1rem;
     margin: 0;
+    line-height: 26px;
     color: var(--color-grey);
     @include responsive(tablet){
         font-size: 1.125rem;
@@ -12,4 +13,13 @@
         font-size: 1.125rem;
         line-height: 28px;
     }
+}
+.text-bold{
+font-weight: 800;
+font-size: 1.5rem;
+line-height: 2rem;
+color: var(--color-white);
+@include responsive(desktop){
+    font-size: 2rem;
+}
 }

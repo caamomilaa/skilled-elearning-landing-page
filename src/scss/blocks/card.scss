@@ -1,0 +1,64 @@
+@use '../mixins/responsive.scss' as *;
+.card-container{
+    @include responsive (tablet){
+        display: grid;
+       grid-template-columns: repeat(2,339px);
+       grid-template-rows: repeat(3,388px);
+       gap:10px;
+       justify-content: center;
+    } 
+}
+.card--gradient{
+   background-image: linear-gradient(#FF6F48,#F02AA6);
+   @include responsive (tablet){
+       grid-column: 1/2;
+       grid-row: 1/2;
+    } 
+}
+.card--animation{
+    @include responsive (tablet){
+        grid-column: 2/3;
+        grid-row: 1/2;
+     } 
+}
+.card--design{
+    @include responsive (tablet){
+        grid-column: 1/2;
+        grid-row: 2/3;
+     } 
+}
+.card--photography{
+    @include responsive (tablet){
+        grid-column: 2/3;
+        grid-row: 2/3;
+     } 
+}
+.card--crypto{
+    @include responsive (tablet){
+        grid-column: 1/2;
+        grid-row: 3/4;
+     } 
+}
+.card--business{
+    @include responsive (tablet){
+        grid-column: 2/3;
+        grid-row: 3/4;
+     } 
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    width: 21.4375rem;
+    border-radius: 0.625rem;
+    background-color: var(--color-white);
+    padding-inline: 1.75rem;
+    padding-bottom: 2rem;
+    margin-block: 2rem;
+}
+.card-logo{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}

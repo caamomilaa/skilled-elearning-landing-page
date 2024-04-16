@@ -1,7 +1,5 @@
 @use '../mixins/responsive.scss' as *;
 .button{
-    width: 8.75rem;
-    height: 3rem;
     border-radius: 1.75rem;
     background-color: transparent;
     color: var(--color-white);
@@ -11,8 +9,6 @@
     font-weight: 700;
     line-height: 1.75rem;
     @include responsive(desktop){
-        width: 10.4375rem;
-        height: 3.9375rem;
         padding-inline: 31px;
         padding-block: 19px;
     }
@@ -25,4 +21,9 @@
 }
 .button--purple{
     background-image: linear-gradient(#4851FF,#F02AA6);
+}
+.button--ghost{
+    padding: 0;
+    color: var(--color-pink);
+    text-align: left;
 }
