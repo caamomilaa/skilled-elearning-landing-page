@@ -1,29 +1,32 @@
 @use '../mixins/responsive.scss' as *;
-.button{
-    border-radius: 1.75rem;
-    background-color: transparent;
-    color: var(--color-white);
-    text-align: center;
-    padding: 9px 24px 11px 24px;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.75rem;
-    @include responsive(desktop){
-        padding-inline: 31px;
-        padding-block: 19px;
-    }
+.button {
+  border-radius: 1.75rem;
+  background-color: transparent;
+  color: var(--color-white);
+  text-align: center;
+  padding: 9px 24px 11px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  @include responsive(desktop) {
+    padding-inline: 32px;
+    padding-block: 14px;
+  }
 }
-.button--dark{
-    background-color: var(--color-darkblue) ;
+.button--dark {
+  background-color: var(--color-darkblue);
 }
-.button--pink{
-    background-image: linear-gradient(#FF6F48,#F02AA6);
+.button--pink {
+  background-image: linear-gradient(#ff6f48, #f02aa6);
+  width: 10.4375rem;
 }
-.button--purple{
-    background-image: linear-gradient(#4851FF,#F02AA6);
+.button--purple {
+  background-image: linear-gradient(#4851ff, #f02aa6);
 }
-.button--ghost{
-    padding: 0;
-    color: var(--color-pink);
-    text-align: left;
+.button--ghost {
+  margin: 0;
+  padding: 0;
+  color: var(--color-pink);
+  text-align: left;
+  margin-top: auto;
 }
