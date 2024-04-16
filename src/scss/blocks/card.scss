@@ -1,11 +1,11 @@
 @use '../mixins/responsive.scss' as *;
 .card-container {
   display: grid;
-  gap: 32px;
+  gap: 40px;
   @include responsive(tablet) {
     grid-template-columns: repeat(2, 339px);
     grid-template-rows: repeat(3, 388px);
-    gap: 10px;
+    gap: 64px 10px;
     justify-content: center;
   }
   @include responsive(desktop) {
@@ -15,7 +15,6 @@
     justify-content: center;
   }
 }
-
 .card {
   position: relative;
   display: flex;
@@ -32,7 +31,6 @@
   width: 56px;
   border-radius: 100%;
 }
-
 .card--gradient {
   background-image: linear-gradient(#ff6f48, #f02aa6);
   padding: 24px 29px 32px 28px;

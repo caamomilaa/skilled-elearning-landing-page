@@ -1,4 +1,5 @@
 @use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
 .button {
   border-radius: 1.75rem;
   background-color: transparent;
@@ -15,13 +16,22 @@
 }
 .button--dark {
   background-color: var(--color-darkblue);
+  @include hover {
+    background-color: var(--color-blue);
+  }
 }
 .button--pink {
   background-image: linear-gradient(#ff6f48, #f02aa6);
   width: 10.4375rem;
+  @include hover {
+    background-image: linear-gradient(#ff70485f, #f02aa764);
+  }
 }
 .button--purple {
   background-image: linear-gradient(#4851ff, #f02aa6);
+  @include hover {
+    background-image: linear-gradient(#4851ff6a, #f02aa759);
+  }
 }
 .button--ghost {
   margin: 0;
@@ -29,4 +39,7 @@
   color: var(--color-pink);
   text-align: left;
   margin-top: auto;
+  @include hover {
+    color: var(--color-lightpink);
+  }
 }
