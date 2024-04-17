@@ -4,7 +4,6 @@
   gap: 40px;
   @include responsive(tablet) {
     grid-template-columns: repeat(2, 339px);
-    grid-template-rows: repeat(3, 388px);
     gap: 64px 10px;
     justify-content: center;
   }
